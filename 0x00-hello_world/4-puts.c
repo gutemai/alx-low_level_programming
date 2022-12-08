@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main --  entry parts
- * return: always zero
+ * return:0
  */
 int main(void)
 {	puts("\"Programming is like building a multilingual puzzle");	
