@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *rev_string - function thats a string
- * @: the string
+ * rev_string - function thats a string
+ * @s: the string
  */
 void rev_string(char *s)
 {
@@ -18,4 +18,6 @@ void rev_string(char *s)
 	{
 		_ putchar(s[count]);
 	}
+
+	_putchar('\n');
 }
