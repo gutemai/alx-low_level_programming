@@ -4,6 +4,7 @@
  * print_array - print numbers of elements of array
  *@a:array
  *@n:number of values
+ * Return:nothing
  */
 void print_array(int *a, int n)
 {
