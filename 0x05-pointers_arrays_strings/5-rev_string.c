@@ -14,9 +14,9 @@ void rev_string(char *s)
 		count++;
 	}
 
-	for (var = count; count < 0; var--)
+	for (var = count - 1; var <= 0; var--)
 	{
-		_putchar(s[count]);
+		_putchar(s[var]);
 	}
 
 	_putchar('\n');
