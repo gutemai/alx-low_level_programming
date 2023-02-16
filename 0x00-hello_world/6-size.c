@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - entry
- * return: 0
+ * return:Always 0
  */
 int main(void)
 {	char m;
