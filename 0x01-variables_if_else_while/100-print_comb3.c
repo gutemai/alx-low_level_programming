@@ -16,10 +16,10 @@ int main(void)
 		{
 			if (num1 < num2)
 			{
-				putchar((num1);
-				putchar((num2);
+				putchar(num1);
+				putchar(num2);
 
-				if (num1 != 8 || (num1 == 8 && num2 != 9)
+				if (num1 != 8 || (num1 == 8 && num2 != 9))
 				{
 					putchar(',');
 					putchar(' ');
@@ -29,6 +29,7 @@ int main(void)
 	}
 
 	putchar('\n');
+
 
 	return (0);
 }
