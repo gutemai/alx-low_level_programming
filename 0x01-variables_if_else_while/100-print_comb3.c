@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-	int num1;
-	int num2;
+	int n;
+	int m;
 
-	for (num1 = 0; num1 < 9; num1++)
+	for (n = '0'; n < '9'; n++)
 	{
-		for (num2 = 0; num2 < 9; num2++)
+		for (m = '0'; m < '9'; m++)
 		{
-			if (num1 < num2)
+			if (n < m)
 			{
-				putchar(num1);
-				putchar(num2);
+				putchar(n);
+				putchar(m);
 
-				if (num1 != 8 || (num1 == 8 && num2 != 9))
+				if (n != '8' || (n == '8' && m != '9'))
 				{
 					putchar(',');
 					putchar(' ');
