@@ -5,7 +5,7 @@
  */
 void print_diagonal(int n)
 {
-	int i, space;
+	int i, sp;
 
 	if (n <= 0)
 	{
@@ -15,7 +15,7 @@ void print_diagonal(int n)
 	{
 		for (i = 1; i <= n; i++)
 		{
-			for (space = 1; space < i; space++)
+			for (sp = 1; sp < i; sp++)
 			{
 				_putchar(' ');
 			}
