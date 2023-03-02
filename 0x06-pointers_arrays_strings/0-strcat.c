@@ -7,15 +7,15 @@
  * Return:pointer to dest
  */
 char *_strcat(char *dest, char *src)
-{
+	{
 	int i;
 	int len = 0;
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[len++] = src[i];
+		dest[len + i] = src[i];
 	}
-	dest[len++] = '\0';
+	dest[len + i] = '\0';
 
 	return (dest);
 }
