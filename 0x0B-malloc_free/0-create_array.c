@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * create_array - func that creates an array of chars,
  *@size:unsigned int
