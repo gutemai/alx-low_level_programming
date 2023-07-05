@@ -8,28 +8,38 @@
  */
 char *cap_string(char *str)
 {
-	int i;
+	char *ptr = str;
 
-	for (i = 0; str[i]; i++)
+	int capitalize = 1;
+
+	while (*ptr != '\0')
 	{
-		while (!(str[i] >= 'a' && str[i] <= 'z'))
-			i++;
-
-		if (str[i - 1] == ' ' ||
-		    str[i - 1] == '\t' ||
-		    str[i - 1] == '\n' ||
-		    str[i - 1] == ',' ||
-		    str[i - 1] == ';' ||
-		    str[i - 1] == '.' ||
-		    str[i - 1] == '!' ||
-		    str[i - 1] == '?' ||
-		    str[i - 1] == '"' ||
-		    str[i - 1] == '(' ||
-		    str[i - 1] == ')' ||
-		    str[i - 1] == '{' ||
-		    str[i - 1] == '}' ||
-		    i == 0)
-			str[i] = str[i] - 32;
+		if (*ptr >= 'a' && *ptr <= 'z' && capitalize)
+		{
+			*ptr -= 32;
+			capitalize = 0;
+		}
+		else if (*ptr == ' ' ||
+		*ptr == '\t' ||
+		*ptr == '\n' ||
+		*ptr == ',' ||
+		*ptr == ';' ||
+		*ptr == '.' ||
+		*ptr == '!' ||
+		*ptr == '?' ||
+		*ptr == '"' ||
+		*ptr == '(' ||
+		*ptr == ')' ||
+		*ptr == '{' ||
+		*ptr == '}')
+		{
+			capitalize = 1;
+		}
+		else if (*ptr >= 'A' && *ptr <= 'Z')
+		{
+			capitalize = 0;
+		}
+		ptr++;
 	}
 	return (str);
 }
